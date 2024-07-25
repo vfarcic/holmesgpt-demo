@@ -1,0 +1,11 @@
+project: dot
+providers:
+  google_secrets_manager:
+    kind: google_secretmanager
+    maps:
+      - id: secrets
+        path: projects/vfarcic
+        keys:
+          azure-openai-key: AZURE_API_KEY
+          azure-openai-api-version: AZURE_API_VERSION
+          azure-openai-endpoint: AZURE_API_BASE
